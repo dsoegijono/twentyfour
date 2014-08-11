@@ -1,0 +1,9 @@
+# Site settings
+title: 24 Game Solution
+description: "4 cards. 24."
+baseurl: ""
+url: "http://dsoegijono.github.io/twentyfour"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
