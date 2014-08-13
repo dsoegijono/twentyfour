@@ -27,6 +27,7 @@ Deck of cards is generated, and 4 cards are randomly drawn. Ace has a value of 1
     8*10-8*7 = 24
 
 ### Notes & Issues
+* Python solution available [here](https://github.com/dsoegijono/code-bits/blob/master/solvers/twentyfour.py).
 - 10 cards are represented by '0', Aces are represented by '1'
 - Doesn't consider divisions: Divisions don't play well with integers :(
 - Displays same but rearranged solutions

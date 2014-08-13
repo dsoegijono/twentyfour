@@ -1,8 +1,8 @@
 # Site settings
 title: 24 Game Solution
-description: "4 cards. 24."
-baseurl: "http://dsoegijono.github.io/twentyfour/"
-url: "http://dsoegijono.github.io/twentyfour/"
+description: "The 24 game solver by Daphne Soegijono."
+baseurl: ""
+url: "http://dsoegijono.github.io/"
 
 # Build settings
 markdown: kramdown

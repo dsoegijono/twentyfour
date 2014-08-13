@@ -1,9 +1,12 @@
-var ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+var ranks = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 var suits = ["c", "d", "h", "s"];
 var target = 24;
 var ops = [" + ", " - ", " * ", " / "];
 
 function deal() {
+  // Clear solutions textarea
+  document.getElementById("solutionsText").value = "";
+
   // Create deck
   var deck = [];
   for (var i = 0; i < ranks.length; i++) {
@@ -14,9 +17,18 @@ function deal() {
   }
 
   // Draw 4 cards from deck
+  var uniqueCard = [];
   for (var k = 1; k <= 4; k++) {
-    var card = deck[Math.floor(Math.random() * deck.length)];
-    document.getElementById("n" + k).value = card;
+    var card;
+    do {
+      card = deck[Math.floor(Math.random() * deck.length)];
+    } while (uniqueCard.indexOf(card) != -1);
+    if (uniqueCard.indexOf(card) == -1) {
+      uniqueCard.push(card);
+      document.getElementById("n" + k).value = card;
+    } else {
+      document.getElementById("n" + k).value = "ERROR: Can't get a unique card";
+    }
   }
 };
 
@@ -71,7 +83,7 @@ function displaySolutions(solutions) {
   for (var i = 0; i < n; i++) {
     str += "\n" + solutions[i];
   }
-  document.getElementById("textarea1").value = str;
+  document.getElementById("solutionsText").value += str;
 };
 
 function getValues() {
@@ -79,13 +91,7 @@ function getValues() {
   for (var i = 1; i <= 4; i++) {
     var temp = document.getElementById("n" + i);
     if (temp != null) {
-      if (temp.value[0] == 'A') {
-        nums[i-1] = 1;
-      } else if (temp.value[0] == '0') {
-        nums[i-1] = 10;
-      } else {
-        nums[i-1] = temp.value[0];
-      }
+      nums[i-1] = temp.value.slice(0, -1);
     }
   }
   return nums;
