@@ -95,7 +95,8 @@ function getValues() {
   for (var i = 1; i <= 4; i++) {
     var temp = document.getElementById("n" + i);
     if (temp != null) {
-      nums[i-1] = temp.value.slice(0, -1);
+      var numb = temp.value.match(/\d/g);
+      nums[i-1] = numb.join("");
     }
   }
   return nums;
