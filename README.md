@@ -13,18 +13,9 @@ Deck of cards is generated, and 4 cards are randomly drawn. Ace has a value of 1
     Ranks: Ace = 1, 2-10 normal, JQK not used
     Suits: 'c' = Clubs, 'd' = Diamonds, 'h' = Hearts, 's' = Spades
 
-### Sample Output
+### Input
 
-    Cards drawn: ['7d', '8s', '0s', '8c']
-    >>> Found 8 solutions:
-    8*10-7*8 = 24
-    8*10-8*7 = 24
-    10*8-7*8 = 24
-    10*8-8*7 = 24
-    10*8-7*8 = 24
-    10*8-8*7 = 24
-    8*10-7*8 = 24
-    8*10-8*7 = 24
+"Deal" button will draw 4 random cards using the ranks and suits above. Users can also input any number in the input fields (non-numbers will be ignored).
 
 ### Notes & Issues
 * Python solution available [here](https://github.com/dsoegijono/code-bits/blob/master/solvers/twentyfour.py).
