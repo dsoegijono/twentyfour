@@ -9,10 +9,11 @@ function deal() {
 
   // Create deck
   var deck = [];
+  var x = 0;
   for (var i = 0; i < ranks.length; i++) {
     for (var j = 0; j < suits.length; j++) {
       var temp = ranks[i] + suits[j];
-      deck[i+j] = temp;
+      deck[x++] = temp;
     }
   }
 
@@ -33,6 +34,9 @@ function deal() {
 };
 
 function solve() {
+  // Clear solutions textarea
+  document.getElementById("solutionsText").value = "";
+
   var nums = getValues();
   var solutions = [];
   var found = 0;
@@ -57,7 +61,7 @@ function solve() {
               }
               var answerstr = nums[i] + ops[p] + nums[j] + ops[q] + nums[k] + ops[r] + nums[l];
               var answerint = eval(answerstr);
-              if (answerint > 23.99999 && answerint < 24.00001) { //TODO fix this!
+              if (answerint > 23.99999 && answerint < 24.00001) {
                 found += 1;
                 solutions.push(answerstr);
               }
@@ -91,7 +95,8 @@ function getValues() {
   for (var i = 1; i <= 4; i++) {
     var temp = document.getElementById("n" + i);
     if (temp != null) {
-      nums[i-1] = temp.value.slice(0, -1);
+      var numb = temp.value.match(/\d/g);
+      nums[i-1] = numb.join("");
     }
   }
   return nums;

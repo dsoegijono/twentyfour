@@ -1,7 +1,7 @@
 # Site settings
-title: 24 Game Solution
+title: Twentyfour
 description: "The 24 game solver by Daphne Soegijono."
-baseurl: "http://dsoegijono.github.io/twentyfour"
+baseurl: "/twentyfour"
 url: "http://dsoegijono.github.io/"
 
 # Build settings
