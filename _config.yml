@@ -3,6 +3,8 @@ title: Twentyfour
 description: "The 24 game solver by Daphne Soegijono."
 baseurl: "/twentyfour"
 url: "http://dsoegijono.github.io/"
+owner: "Daphne Soegijono"
+github: "https://github.com/dsoegijono/twentyfour"
 
 # Build settings
 markdown: kramdown

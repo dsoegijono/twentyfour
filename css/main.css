@@ -87,6 +87,16 @@ button:focus {
   z-index: 1;
 }
 
+.site-owner {
+  display: block;
+  float: left;
+  margin-left: 15px;
+  line-height: 56px;
+  /*vertical-align: text-bottom;*/
+  font-size: .9em;
+  color: #727272;
+}
+
 .site-nav {
   float: right;
   line-height: 56px;
