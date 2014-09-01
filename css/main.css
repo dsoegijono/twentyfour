@@ -133,3 +133,13 @@ blockquote {
   font-size: 0.9em;
   color: #555;
 }
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+
+  .description {
+    display: none;
+  }
+
+}
