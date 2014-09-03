@@ -64,6 +64,9 @@ button:focus {
   zoom: 1;
 }
 
+.clear {
+  clear: both;
+}
 
 /* Site header */
 
@@ -85,16 +88,6 @@ button:focus {
   line-height: 56px;
   position: relative;
   z-index: 1;
-}
-
-.site-owner {
-  display: block;
-  float: left;
-  margin-left: 15px;
-  line-height: 56px;
-  /*vertical-align: text-bottom;*/
-  font-size: .9em;
-  color: #727272;
 }
 
 .site-nav {
@@ -137,6 +130,15 @@ blockquote {
 /* Media queries */
 
 @media screen and (max-width: 600px) {
+
+  .app {
+    width: 100%;
+    /*text-align: center;*/
+  }
+
+  input.number {
+    padding-bottom: 10px;
+  }
 
   .description {
     display: none;
