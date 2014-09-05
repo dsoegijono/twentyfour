@@ -8,45 +8,27 @@ html, body {
   /*padding: 20px;*/
 }
 
-input.number {
-  width: 50px;
-  margin: 0 10px;
-  padding: 10px 5px;
-  font-size: 12pt;
-}
-
-textarea {
-  width: 200px;
-  height: 300px;
-  font-size: 13pt;
-  resize: none;
-  padding: 10px;
-}
 
 a         { color: #57878b; text-decoration: none; }
 a:hover   { color: #3a515f; text-decoration: underline; }
 a:visited { color: #57878b; }
 
 button {
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
-	background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
-	background-color: #ededed;
+	background-color: transparent;
 	-webkit-border-radius: 10px;
 	   -moz-border-radius: 10px;
 	        border-radius: 10px;
-	border: 1px solid #dcdcdc;
-	color: #777777;
+	border: 2px solid #57878b;
+	color: #57878b;
 	font-size: 15px;
-	font-weight: bold;
-	height: 49px;
+	height: 50px;
 	width: 95px;
 	text-decoration: none;
 	text-align: center;
 }
 button:hover {
-	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
-	background: -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
-	background-color: #dfdfdf;
+	background-color: #57878b;
+  color: #fff;
 }
 button:focus {
   outline: none;
@@ -106,10 +88,28 @@ button:focus {
 }
 
 /* Site content */
+
 .app {
   display: inline-block;
   float: left;
   width: 45%;
+  border: 1px solid #ccc;
+}
+
+
+input.number {
+  width: 50px;
+  margin: 0 10px;
+  padding: 10px 5px;
+  font-size: 12pt;
+}
+
+textarea {
+  width: 200px;
+  height: 300px;
+  font-size: 13pt;
+  resize: none;
+  padding: 10px;
 }
 
 .description {
